@@ -2,11 +2,11 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |language, attributes|
     attributes.each do |attribute, type|
-      if new_hash.has_key?(lang)
-        new_hash[lang][:style] << style
+      if new_hash.has_key?(language)
+        new_hash[language][:style] << style
       else
-        new_hash[lang] = type
-        new_hash[lang][:style] = [style]
+        new_hash[language] = type
+        new_hash[language][:style] = [style]
       end
     end
   end
